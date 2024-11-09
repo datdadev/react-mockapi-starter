@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# react-mockapi-starter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository provides a starter template for a shopping app built with React and Chakra UI, using MockAPI as the backend for data management. The app allows users to add, edit, and delete products, each with a name, price, and quantity.
+
+## Features
+- **Product Management**: Supports creating, editing, and deleting product entries.
+- **Modal Popups**: Provides modals for adding/editing products and confirming deletions.
+- **Responsive UI**: Built with Chakra UI for a user-friendly design.
+
+## Prerequisites
+- **Node.js** and **npm**: Ensure you have Node.js and npm installed.
+- **MockAPI Account**: This app requires a MockAPI endpoint to store and manage product data.
+
+## Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/react-mockapi-starter.git
+cd react-mockapi-starter
+```
+
+### 2. Install Dependencies
+Use npm to install the required dependencies:
+```bash
+npm install
+```
+
+### 3. Set Up MockAPI
+1. Go to [MockAPI](https://mockapi.io/) and create a new project.
+2. Add a new resource (e.g., “products”) to store your product data.
+3. Copy your MockAPI **base URL** and replace `baseUrl` in `ShoppingApp.js`:
+    ```javascript
+    const baseUrl = "https://your-mockapi-url.com/products";
+    ```
+
+### 4. Run the App
+```bash
+npm start
+```
+The app will start on [http://localhost:3000](http://localhost:3000).
+
+## Customization
+
+### Chakra UI
+- Modify the Chakra UI theme settings in `ShoppingApp.js` as needed.
+- Use Chakra UI components to expand the UI further.
+
+### Component Customization
+To customize components like lists, inputs, or modals:
+- Edit `ShoppingApp.js` to adjust properties, styles, or layout.
 
 ## Available Scripts
 
 In the project directory, you can run:
+- **`npm start`**: Runs the app in development mode.
+- **`npm test`**: Launches the test runner.
+- **`npm run build`**: Builds the app for production.
 
-### `npm start`
+## Dependencies
+- **React**: Core library for building the UI.
+- **Chakra UI**: Component library for styling and layout.
+- **React Icons**: Provides icons for edit and delete actions.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Important Notes
+- Ensure the MockAPI base URL is correct; otherwise, data will not load or save.
+- For Chakra UI compatibility, use a version lower than `2.8.x` if required.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+This project is licensed under the MIT License.
